@@ -12,7 +12,7 @@ plt.rcParams['font.serif'] = ['Computer Modern Roman']
 plt.rcParams['text.latex.preamble'] = r'\usepackage{amsmath} \usepackage{amsmath} \usepackage{amsthm} \usepackage{amssymb}'
 
 
-data = pd.read_csv(r"/home/alex/OneDrive/PhD/athena-aniso/Paper/tempdependent_mu_and_gamma.dat",sep='\\s+',header=None)
+data = pd.read_csv(r"./tempdependent_mu_and_gamma.dat",sep='\\s+',header=None)
 logT_data = data.loc[:,0]
 T_data = 10**logT_data
 mu_data = data.loc[:,1]
